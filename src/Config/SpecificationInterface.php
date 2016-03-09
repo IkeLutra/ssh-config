@@ -9,7 +9,7 @@ interface SpecificationInterface {
      * @param [string] $pattern    [Pattern for matching a host]
      * @param Parameter[] $parameters [Array of Parameter objects]
      */
-    public function __construct($pattern, $parameters);
+    public function __construct($pattern, array $parameters);
 
     public function getPattern();
 

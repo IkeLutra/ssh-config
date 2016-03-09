@@ -14,4 +14,9 @@ class HostTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertInstanceOf('Otter\SSHConfig\Config\SpecificationInterface', $this->subject);
     }
+
+    public function testKeyword()
+    {
+        $this->assertEquals('Host', $this->subject->getKeyword());
+    }
 }

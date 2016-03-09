@@ -11,6 +11,8 @@ interface SpecificationInterface {
      */
     public function __construct($pattern, array $parameters);
 
+    public function getKeyword();
+
     public function getPattern();
 
     public function getParameters();

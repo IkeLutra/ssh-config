@@ -14,4 +14,10 @@ class ParameterTest extends \PHPUnit_Framework_TestCase {
     {
         $this->assertInstanceOf('Otter\SSHConfig\Config\ParameterInterface', $this->subject);
     }
+
+    public function testKeyword()
+    {
+        $this->assertEquals($this->keyword, $this->subject->getKeyword());
+    }
+
 }

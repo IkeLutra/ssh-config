@@ -20,4 +20,9 @@ class ParameterTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals($this->keyword, $this->subject->getKeyword());
     }
 
+    public function testArguments()
+    {
+        $this->assertEquals($this->arguments, $this->subject->getArguments());
+    }
+
 }
